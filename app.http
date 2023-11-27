@@ -1,0 +1,61 @@
+
+POST http://localhost:3005/register/
+Content-Type: application/json
+
+{
+  "username": "yasoda_mmm",
+  "password": "yasoda_123",
+  "name": "Yasoda Gottapu",
+  "gender": "female"
+}
+
+###
+POST http://localhost:3005/login/
+Content-Type: application/json
+
+{
+  "username": "yasoda_mmm",
+  "password": "yasoda_123"
+}
+
+###
+GET http://localhost:3005/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJuYW1lIjoiWWFzb2RhIEdvdHRhcHUiLCJ1c2VybmFtZSI6Inlhc29kYV9tbW0iLCJwYXNzd29yZCI6IiQyYiQxMCR4c0tRV1M0dEo4R2JzRzhab3RpTHAuZUJEL2x6TFNnckhFbDc5T1M3QlhlbE1UODVibkoydSIsImdlbmRlciI6ImZlbWFsZSIsImlhdCI6MTcwMDgyMTgwOX0._PkvBEU28c2nxylbMoWntQqdsqnkG47-nL9m4iyALno
+
+###
+GET http://localhost:3005/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJuYW1lIjoiWWFzb2RhIEdvdHRhcHUiLCJ1c2VybmFtZSI6Inlhc29kYV9tbW0iLCJwYXNzd29yZCI6IiQyYiQxMCR4c0tRV1M0dEo4R2JzRzhab3RpTHAuZUJEL2x6TFNnckhFbDc5T1M3QlhlbE1UODVibkoydSIsImdlbmRlciI6ImZlbWFsZSIsImlhdCI6MTcwMDgyMTgwOX0._PkvBEU28c2nxylbMoWntQqdsqnkG47-nL9m4iyALno
+ 
+
+###
+GET http://localhost:3005/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJuYW1lIjoiWWFzb2RhIEdvdHRhcHUiLCJ1c2VybmFtZSI6Inlhc29kYV9tbW0iLCJwYXNzd29yZCI6IiQyYiQxMCR4c0tRV1M0dEo4R2JzRzhab3RpTHAuZUJEL2x6TFNnckhFbDc5T1M3QlhlbE1UODVibkoydSIsImdlbmRlciI6ImZlbWFsZSIsImlhdCI6MTcwMDgyMTgwOX0._PkvBEU28c2nxylbMoWntQqdsqnkG47-nL9m4iyALno
+
+###
+GET http://localhost:3005/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJuYW1lIjoiWWFzb2RhIEdvdHRhcHUiLCJ1c2VybmFtZSI6Inlhc29kYV9tbW0iLCJwYXNzd29yZCI6IiQyYiQxMCR4c0tRV1M0dEo4R2JzRzhab3RpTHAuZUJEL2x6TFNnckhFbDc5T1M3QlhlbE1UODVibkoydSIsImdlbmRlciI6ImZlbWFsZSIsImlhdCI6MTcwMDgyMTgwOX0._PkvBEU28c2nxylbMoWntQqdsqnkG47-nL9m4iyALno
+
+###
+GET http://localhost:3005/tweets/3/likes/
+
+###
+GET http://localhost:3005/tweets/4/replies/
+
+###
+GET http://localhost:3005/user/tweets/
+
+###
+POST http://localhost:3005/user/tweets/
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+
+###
+DELETE http://localhost:3005/tweets/4/
+
+
+
+
+
